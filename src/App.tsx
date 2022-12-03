@@ -5,11 +5,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProfilePage from "./pages/ProfilePage";
 import PostDetailPage from "./pages/PostDetailPage";
+import Sidebar from "./components/Sidebar";
 
 const MainLayout = () => (
   <div className='min-h-screen flex flex-col items-center'>
     <Navbar/>
-    <div className='w-full max-w-7xl mt-5'>
+    <div className='w-full max-w-7xl mt-5 flex justify-start p-2 gap-2'>
+      <Sidebar/>
       <Outlet/>
     </div>
   </div>
