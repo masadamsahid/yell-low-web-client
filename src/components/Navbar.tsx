@@ -13,14 +13,14 @@ import {SearchIcon} from '@chakra-ui/icons'
 
 const Navbar = () => {
   return (
-    <div className='w-full p-2 sticky flex items-center justify-center drop-shadow-lg bg-white'>
+    <div className='w-full p-2 sticky top-0 flex items-center justify-center drop-shadow-lg bg-white z-50'>
       <div className='max-w-7xl w-full p-2 flex items-center justify-between'>
         <div className='flex justify-center items-center gap-2'>
           <Image
             className='w-6 h-6 sm:w-12 sm:h-12'
             src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png'
           />
-          <h1 className='hidden md:block text-2xl font-extrabold fonp'>
+          <h1 className='hidden md:block text-2xl font-extrabold font-poppins'>
             Yell-Low!
           </h1>
         </div>

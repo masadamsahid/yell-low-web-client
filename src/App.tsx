@@ -8,7 +8,7 @@ import PostDetailPage from "./pages/PostDetailPage";
 import Sidebar from "./components/Sidebar";
 
 const MainLayout = () => (
-  <div className='min-h-screen flex flex-col items-center'>
+  <div className='min-h-screen flex flex-col items-center bg-slate-100'>
     <Navbar/>
     <div className='w-full max-w-7xl mt-5 flex justify-start p-2 gap-2'>
       <Sidebar/>
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <ProfilePage/>,
       },
       {
-        path: '/posts',
+        path: '/posts/:id',
         element: <PostDetailPage/>,
       },
     ],

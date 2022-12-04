@@ -30,16 +30,19 @@ const sideMenus: sideMenuType[] = [
 
 const Sidebar = () => {
   return (
-    <div className='hidden md:block'>
-      <Stack className='w-full md:w-[200px] rounded-md p-2 h flex flex-col gap-2'>
+    <div className='hidden sm:block sticky top-24 h-fit rounded-md'>
+      <Stack className='w-full md:w-[200px] rounded-md p-2 bg-[rgb(255,255,255,.4)] drop-shadow-lg flex flex-col gap-2 mb-2'>
         {sideMenus.map((menu) => (
           <Link to={`/${menu.link}`} key={menu.title} className='w-full h-fit'>
-            <Button leftIcon={menu.icon} size='lg' variant='ghost' className='w-full text-black'>
+            <Button leftIcon={menu.icon} size='lg' variant='ghost' className='w-full text-black' bg='#fff'>
               {menu.title}
             </Button>
           </Link>
         ))}
       </Stack>
+      <Button className='w-full bg-[rgb(247,224,24)]' bgColor='rgb(247,224,24)'>
+        Yell 📢
+      </Button>
     </div>
   );
 };
