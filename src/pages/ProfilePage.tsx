@@ -1,5 +1,8 @@
 import React from 'react';
-import {Avatar, Card, CardHeader, Heading, Image, Text} from "@chakra-ui/react";
+import {Avatar, Card, CardBody, CardHeader, Divider, Heading, Image, Text} from "@chakra-ui/react";
+import Post from "../components/Post";
+import {MdInfo} from "react-icons/all";
+import BasicInfos from "../components/BasicInfos";
 
 const ProfilePage = () => {
   return (
@@ -20,9 +23,28 @@ const ProfilePage = () => {
           />
           <div className='text-center p-2'>
             <Text color='gray'>@adebayosage</Text>
-            <Heading>Segun Adebayo</Heading>
+            <Heading  className='mb-2'>Segun Adebayo</Heading>
+            <Divider  className='mb-1'/>
+            <Text color='gray.700'>Creator, Chakra UI</Text>
+          </div>
+          <div className='lg:hidden max-w-2xl'>
+            <BasicInfos/>
           </div>
         </CardHeader>
+
+        <CardBody className='flex gap-5 justify-center lg:justify-start'>
+          {/* Basic Infos */}
+          <div className="hidden lg:block flex-1">
+            <BasicInfos/>
+          </div>
+
+          <div>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+          </div>
+        </CardBody>
       </Card>
     </div>
   );
