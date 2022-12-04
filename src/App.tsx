@@ -2,7 +2,6 @@ import {Button, ChakraProvider} from "@chakra-ui/react";
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import ProfilePage from "./pages/ProfilePage";
 import PostDetailPage from "./pages/PostDetailPage";
 import Sidebar from "./components/Sidebar";
