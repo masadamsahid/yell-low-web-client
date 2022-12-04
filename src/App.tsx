@@ -1,4 +1,4 @@
-import {Button, ChakraProvider} from "@chakra-ui/react";
+import {ChakraProvider} from "@chakra-ui/react";
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       },
       {
         path: '/users',
+        element: <ProfilePage/>,
+      },
+      {
+        path: '/profile',
         element: <ProfilePage/>,
       },
       {
